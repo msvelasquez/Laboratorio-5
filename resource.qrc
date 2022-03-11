@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>pac/abierto_d.png</file>
+        <file>pac/abierto_l.png</file>
+        <file>pac/abierto_r.png</file>
+        <file>pac/abierto_u.png</file>
+        <file>pac/bola.png</file>
+        <file>pac/semi_d.png</file>
+        <file>pac/semi_l.png</file>
+        <file>pac/semi_r.png</file>
+        <file>pac/semi_u.png</file>
+        <file>pac/long.png</file>
+        <file>pac/medium.png</file>
+        <file>pac/vertical.png</file>
+    </qresource>
+</RCC>
