@@ -7,6 +7,7 @@
 #include "vertical.h"
 #include "long.h"
 #include "medium.h"
+#include <QKeyEvent>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -20,7 +21,10 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+    void keyPressEvent(QKeyEvent *event);
+
 private:
+    int vel = 8;
     Ui::MainWindow *ui;
     QGraphicsScene *scene;
     pacman *jugador;

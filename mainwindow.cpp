@@ -63,3 +63,22 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+void MainWindow::keyPressEvent(QKeyEvent *event){
+    if(event->key()==Qt::Key_F4){ close(); }
+    if(event->key()==Qt::Key_D){
+        if(jugador->getX()>=(768)){ jugador->posicion(0,jugador->getY()); }else{
+        jugador->setX(jugador->getX()+vel);}
+    }
+    if(event->key()==Qt::Key_A){
+        if(jugador->getX()<=(0)){ jugador->posicion(768,jugador->getY()); }else{
+        jugador->setX(jugador->getX()-vel);}
+    }
+    if(event->key()==Qt::Key_S && jugador->getY()<(576)){
+        jugador->setY(jugador->getY()+vel);
+    }
+    if(event->key()==Qt::Key_W && jugador->getY()>(0)){
+        jugador->setY(jugador->getY()-vel);
+    }
+    jugador->posicion();
+}
+
